@@ -1,0 +1,101 @@
+{
+    "name": "CustomersTouchApp",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "caa64164-ef11-4e07-8828-65385a96fd43": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "4f729b41-81d1-46a0-bc41-530f9b225648": {
+            "paths": [
+                "metadata/view/CustomerDetail",
+                "app/view/override/CustomerDetail.js",
+                "app/view/CustomerDetail.js"
+            ],
+            "className": "CustomerDetail"
+        },
+        "d20ca366-c1b8-4801-b0f0-3c48e10779e6": {
+            "paths": [
+                "metadata/view/CustomerMap",
+                "app/view/override/CustomerMap.js",
+                "app/view/CustomerMap.js"
+            ],
+            "className": "CustomerMap"
+        },
+        "dc9f5101-9028-441c-b8b8-b486676c732f": {
+            "paths": [
+                "metadata/store/Customers",
+                "app/store/override/Customers.js",
+                "app/store/Customers.js"
+            ],
+            "className": "Customers"
+        },
+        "74a2780b-2da7-4565-89f5-64221df4bf00": {
+            "paths": [
+                "metadata/controller/Customer",
+                "app/controller/override/Customer.js",
+                "app/controller/Customer.js"
+            ],
+            "className": "Customer"
+        },
+        "83ccaf22-f290-4d58-9c8b-de6d36a068a4": {
+            "paths": [
+                "metadata/model/Customer",
+                "app/model/override/Customer.js",
+                "app/model/Customer.js"
+            ],
+            "className": "Customer"
+        },
+        "eb6db366-c568-4018-9bde-2d01a65d58de": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "57fca9c0-2746-4f9e-8520-52bce069083b": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "caa64164-ef11-4e07-8828-65385a96fd43",
+            "4f729b41-81d1-46a0-bc41-530f9b225648",
+            "d20ca366-c1b8-4801-b0f0-3c48e10779e6"
+        ],
+        "store": [
+            "dc9f5101-9028-441c-b8b8-b486676c732f"
+        ],
+        "controller": [
+            "74a2780b-2da7-4565-89f5-64221df4bf00"
+        ],
+        "model": [
+            "83ccaf22-f290-4d58-9c8b-de6d36a068a4"
+        ],
+        "resource": [
+            "eb6db366-c568-4018-9bde-2d01a65d58de",
+            "57fca9c0-2746-4f9e-8520-52bce069083b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

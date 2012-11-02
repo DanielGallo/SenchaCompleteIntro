@@ -1,0 +1,26 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Customer"
+        ],
+        "stores": [
+            "Customers"
+        ],
+        "views": [
+            "MainView"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp",
+        "controllers": [
+            "Customer"
+        ]
+    },
+    "id": "ExtBox1-ext-gen14404",
+    "designerId": "application"
+}

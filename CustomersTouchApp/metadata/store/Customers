@@ -1,0 +1,92 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Customers",
+        "designer|userAlias": null,
+        "autoLoad": true,
+        "model": "Customer",
+        "storeId": "Customers"
+    },
+    "id": "ExtBox1-ext-gen3297",
+    "designerId": "dc9f5101-9028-441c-b8b8-b486676c732f",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "http://192.168.0.24:51266/api/customer"
+            },
+            "designerId": "7cf9579d-f980-461a-b1ed-0fe739c63c76",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "e56fe4f3-2569-4a35-ac04-40a453275d74"
+                }
+            ]
+        },
+        {
+            "type": "grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGrouper"
+            },
+            "designerId": "ede4adb8-d2c8-43ea-9ee3-61b1706877b2",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "groupFn",
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "return record.get(\"company\")[0];"
+                        ]
+                    },
+                    "designerId": "caa38e09-027d-4b77-b4a4-974a945d7db5"
+                }
+            ]
+        },
+        {
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter",
+                "property": "company"
+            },
+            "designerId": "d1ced210-6921-4275-8748-083a0534e94c"
+        }
+    ]
+}

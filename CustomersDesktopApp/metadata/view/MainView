@@ -1,0 +1,167 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true,
+        "height": 522,
+        "hidden": false,
+        "width": 776,
+        "layout": "hbox",
+        "title": "Customers to Visit"
+    },
+    "id": "ExtBox1-ext-gen16666",
+    "designerId": "3ea2ecc4-1bd3-4f76-a719-b50419b115a8",
+    "cn": [
+        {
+            "type": "gridpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyGridPanel",
+                "title": null,
+                "store": "Customers"
+            },
+            "designerId": "05f6f2ea-75b5-4025-b81a-5c0a4fc56e8e",
+            "cn": [
+                {
+                    "type": "gridview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView",
+                        "border": false
+                    },
+                    "designerId": "c8e0247a-dcdd-41fb-9542-ee0be5266719"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn1",
+                        "width": 170,
+                        "dataIndex": "company",
+                        "text": "Company"
+                    },
+                    "designerId": "7bdb66f8-cf95-4552-8578-508d1dfe1953"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn2",
+                        "dataIndex": "notes",
+                        "flex": 1,
+                        "text": "Notes"
+                    },
+                    "designerId": "9d9abab1-bed3-4757-9990-1b26ade0441c"
+                }
+            ]
+        },
+        {
+            "type": "form",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyForm",
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "fa87b209-dc4b-4418-a1a1-21899b711c36",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField",
+                        "name": "company",
+                        "fieldLabel": "Company"
+                    },
+                    "designerId": "2694b663-9433-4551-b571-3fa5907e9c2d"
+                },
+                {
+                    "type": "textareafield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextArea",
+                        "name": "notes",
+                        "fieldLabel": "Notes"
+                    },
+                    "designerId": "304b1b48-1e8b-48dc-b642-0a830fc5472e"
+                },
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar"
+                    },
+                    "designerId": "9197759c-4ff1-4f7d-a05d-91214c3168fb",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "action": "Save",
+                                "designer|userClassName": "MyButton",
+                                "text": "Save"
+                            },
+                            "designerId": "8cbd0fd5-edbe-4a57-b7ca-6b0c1c563df7",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "action",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

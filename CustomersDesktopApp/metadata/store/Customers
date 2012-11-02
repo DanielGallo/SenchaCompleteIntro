@@ -1,0 +1,58 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Customers",
+        "autoLoad": true,
+        "storeId": "Customers",
+        "model": "Customer"
+    },
+    "id": "ExtBox1-ext-gen16139",
+    "designerId": "d19bdf97-f65a-4a7e-97a0-e8fa8c442068",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "http://192.168.0.24:51266/api/customer/"
+            },
+            "designerId": "f8957116-a46e-465f-8f09-03beeb145f51",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "d63f434b-0939-4766-afe4-6c6a3f337c92"
+                }
+            ]
+        },
+        {
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter",
+                "property": "company"
+            },
+            "designerId": "d8da0e15-4b65-4fcd-81dd-2658a9c96f27"
+        }
+    ]
+}

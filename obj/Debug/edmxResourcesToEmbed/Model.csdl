@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DatabaseEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="DatabaseModel.Customer" />
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="company" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="notes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lat" Type="Decimal" Precision="9" Scale="6" />
+    <Property Name="lng" Type="Decimal" Precision="9" Scale="6" />
+  </EntityType>
+</Schema>

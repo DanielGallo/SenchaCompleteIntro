@@ -1,0 +1,88 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Customer"
+    },
+    "id": "ExtBox1-ext-gen23430",
+    "designerId": "9b2a60cd-306e-4b4a-be2f-d0ed518e455b",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "customerDetail",
+                "ref": "customerDetail",
+                "selector": ".mainview form"
+            },
+            "designerId": "f2cdc13f-a606-47e8-8249-fab9dfbc06af"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onGridpanelItemClick",
+                "fn": "onGridpanelItemClick",
+                "implHandler": [
+                    "var form = this.getCustomerDetail();\r",
+                    "\r",
+                    "form.loadRecord(record);"
+                ],
+                "name": "itemclick",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": ".mainview grid"
+            },
+            "designerId": "4f9901b0-e405-4ae1-b739-5abbc13d588d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSaveClick",
+                "fn": "onSaveClick",
+                "implHandler": [
+                    "var form = this.getCustomerDetail(),\r",
+                    "    values = form.getValues(),\r",
+                    "    record = form.getRecord();\r",
+                    "\r",
+                    "record.beginEdit();\r",
+                    "\r",
+                    "record.set(values);\r",
+                    "\r",
+                    "if (record.isValid()) {\r",
+                    "    record.endEdit();\r",
+                    "\r",
+                    "    record.save();\r",
+                    "}\r",
+                    "else {\r",
+                    "    record.cancelEdit();\r",
+                    "\r",
+                    "    Ext.Msg.alert(\"Error\", \"There are errors with the record.\");\r",
+                    "}"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "[action=Save]"
+            },
+            "designerId": "f183e060-bf11-4e16-b691-95123b08d746"
+        }
+    ]
+}

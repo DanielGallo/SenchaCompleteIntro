@@ -1,0 +1,14 @@
+{
+    "type": "map",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerMap",
+        "designer|userAlias": "customermap"
+    },
+    "id": "ExtBox1-ext-gen9825",
+    "designerId": "d20ca366-c1b8-4801-b0f0-3c48e10779e6"
+}

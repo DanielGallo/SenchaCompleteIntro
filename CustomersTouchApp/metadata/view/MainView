@@ -1,0 +1,62 @@
+{
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true
+    },
+    "id": "ExtBox1-ext-gen3994",
+    "designerId": "caa64164-ef11-4e07-8828-65385a96fd43",
+    "cn": [
+        {
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Customers to Visit",
+                "designer|userClassName": "MyList",
+                "store": "Customers",
+                "grouped": true
+            },
+            "designerId": "42112219-051e-4b42-9006-d24784dcaee6",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "itemTpl",
+                        "implHandler": [
+                            "<div>{company}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "e606ac64-f143-4d6b-802b-90f50448ac7b"
+                },
+                {
+                    "type": "listindexbar",
+                    "reference": {
+                        "name": "indexBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyIndexBar"
+                    },
+                    "designerId": "88e5253f-825b-408f-81ce-0e839876af99"
+                }
+            ]
+        }
+    ]
+}

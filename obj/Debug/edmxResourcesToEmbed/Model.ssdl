@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="DatabaseModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company" Type="varchar" MaxLength="255" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="lat" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="lng" Type="decimal" Precision="9" Scale="6" />
+  </EntityType>
+</Schema>
